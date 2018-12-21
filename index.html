@@ -41,8 +41,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
+
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm align-self-center">
+                    <a class="btn btn-warning btn-sm btn-block" role="button" href="#reservation"><strong>Reserve Table</strong></a>
                 </div>
             </div>
         </div>
@@ -56,7 +61,7 @@
             <div class="col col-sm order-sm-first col-md">
 
                 <div class="media">
-                    <img src="img/uthappizza.png" alt="uthappizza" class="d-flex mr-3 img-tumbnail align-self-center">
+                    <img src="img/uthappizza.png" alt="uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
@@ -74,7 +79,7 @@
             <div class="col col-sm col-md">
                 <div class="media">
                     <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p> 
                     </div>
                     <img src="img/buffet.png" alt="buffet" class="d-flex ml-3 align-self-center img-thumbnail order-sm-last"">
@@ -98,6 +103,65 @@
                 
             </div>
         </div>
+
+        <!-- form for reservation request -->     
+        <div id="reservation" class="row justify-content-center row-content">
+            <div class="col-sm-12 col-md-8">
+                <div class="card">
+                    <h4 class="card-header bg-warning text-white">Reserve a Table</h4>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group row">
+                                <legend class="col-sm-3 col-form-label pt-0">Number of Guests</legend>
+                                <div class="col-sm-9">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numofguest1" name="numofguest">
+                                        <label for="numofguest1" class="form-check-label">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numofguest2" name="numofguest">
+                                        <label for="numofguest2" class="form-check-label">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numofguest3" name="numofguest">
+                                        <label for="numofguest3" class="form-check-label">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numofguest4" name="numofguest">
+                                        <label for="numofguest4" class="form-check-label">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numofguest5" name="numofguest">
+                                        <label for="numofguest5" class="form-check-label">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="numofguest6" name="numofguest">
+                                        <label for="numofguest6" class="form-check-label">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="from-group row">
+                                <label for="datetime" class="col-sm-3 col-form-label">Date and Time</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="datetime" placeholder="Date">
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="datetime" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="from-group row">
+                                <div class="offset-sm-3 col-sm-9 mt-3">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
@@ -139,7 +203,10 @@
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
            </div>
+
         </div>
+        
+
     </footer> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
