@@ -346,29 +346,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- js script control button -->
-    <script>
-        $(document).ready(function() {
-            $('#mycarousel').carousel({ interval: 2000 });
-            $('#carouselButton').click(function() {
-                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                } else {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-            // Task 2
-            $('#loginModalButton').click(function() {
-                $('#loginModal').modal('toggle');
-            }); 
-            $('#reservationModalButton').click(function() {
-                $('#reservationModal').modal('toggle');
-            });
-        })
-    </script>
+    <script src="js/scripts.js"></script>
 
 
 </body>
