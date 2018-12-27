@@ -30,7 +30,9 @@
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <!-- Task 1 -->
+                    <!-- <a data-toggle="modal" data-target="#loginModal"> -->
+                    <a id="loginModalButton">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -81,7 +83,7 @@
     </div>
     <!-- login modal end -->
 
-    <!-- Task1 reservation modal -->
+    <!-- reservation modal -->
     <div id="reservationModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -165,7 +167,7 @@
     </div>
     <!-- reservation modal end -->
 
-
+    <!-- jumbotron starts here -->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -179,11 +181,15 @@
                 </div>
                 
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#reservationModal" role="button"><strong>Reserve Table</strong></a>
+                    <!-- Task 1 -->
+                    <!-- <a class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#reservationModal" role="button"><strong>Reserve Table</strong></a> -->
+                    <a id='reservationModalButton' class="btn btn-warning btn-sm btn-block" role="button"><strong>Reserve Table</strong></a>
                 </div>
             </div>
         </div>
     </header>
+    <!-- jumbotron ends here -->
+
 
     <div class="container">
         <div class="row row-content">
@@ -288,7 +294,7 @@
         </div>
 
 
-
+    <!-- footer starts here -->
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -331,13 +337,15 @@
 
         </div>
         
-
     </footer> 
+    <!-- footer ends here -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <!-- js script control button -->
     <script>
         $(document).ready(function() {
             $('#mycarousel').carousel({ interval: 2000 });
@@ -351,8 +359,14 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
-                
-            })
+            });
+            // Task 2
+            $('#loginModalButton').click(function() {
+                $('#loginModal').modal('toggle');
+            }); 
+            $('#reservationModalButton').click(function() {
+                $('#reservationModal').modal('toggle');
+            });
         })
     </script>
 
